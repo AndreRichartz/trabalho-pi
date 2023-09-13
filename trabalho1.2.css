@@ -1,0 +1,324 @@
+:root {
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  font-family: 'Roboto Slab', serif;
+}
+
+html {
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: var(--light);
+
+  margin: 0;
+}
+
+.button {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+}
+
+.main-nav ul {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(10, 1fr);
+  list-style: none;
+  padding: 1rem;
+  margin-left: 0em;
+  margin-right: 0rem;
+  box-shadow: var(--shadow);
+  margin-top: 0px;
+}
+
+.main-nav #home {
+  font-weight: 700;
+  font-size: 0.9rem;
+
+}
+
+.main-nav a {
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.main-nav a {
+  font-weight: 800;
+}
+
+.main-nav .material-symbols-outlined {
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #33333300;
+  border: 0;
+}
+
+.bodytext {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    'showcase showcase'
+    'showcase showcase';
+  text-align: justify;
+
+}
+
+.showcase {
+  grid-area: showcase;
+  background-color: #d8d8d8;
+  box-shadow: var(--shadow);
+  padding: 0.9rem;
+  margin-left: 22vw;
+  margin-right: 22vw;
+  min-height: 50rem;
+}
+
+.topbox {
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+
+}
+
+.topbox-a {
+  grid-area: topbox-a;
+}
+
+.topbox-b {
+  grid-area: topbox-b;
+}
+
+.images {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+}
+
+.images img {
+  width: 80%;
+
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+footer>p {
+  margin: 0px;
+}
+
+.text-box {
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr 1fr 1fr;
+
+
+}
+
+.text {
+  display: grid;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-indent: 3rem;
+  grid-column: 2 / 3;
+}
+
+.congo {
+  text-indent: 1.25cm;
+  text-align: justify;
+  font-family: Arial;
+  line-height: 0.7cm;
+  margin-left: 3cm;
+  margin-right: 2cm;
+  font-size: 1rem;
+}
+
+.lista {
+  text-align: justify;
+  font-family: Arial;
+  line-height: 0.7cm;
+  margin-left: 3cm;
+  margin-right: 2cm;
+  font-family: Arial;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  border: solid black 2px;
+
+}
+
+.imageTitle {
+  font-family: Arial;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.subtitulo {
+  font-weight: normal;
+  font-size: 1.2rem;
+  text-indent: 3cm;
+  font-family: Arial;
+  margin-bottom: 0.5rem;
+}
+
+.titulo {
+  text-indent: 3cm;
+  font-size: 14pt;
+  font-family: Arial;
+  margin-top: 3cm;
+  margin-bottom: 0.5rem;
+}
+
+.tituloS {
+  text-indent: 3cm;
+  font-size: 14pt;
+  font-family: Arial;
+  margin-bottom: 0.5rem;
+}
+
+
+.imagemSubtitulo {
+  font-family: Arial;
+  font-size: 10pt;
+}
+
+.itemImg {
+  text-align: center;
+
+}
+
+.fontImg {
+  text-align: left;
+  display: inline-block;
+
+}
+
+.referencia {
+  line-height: normal;
+  margin-left: 3cm;
+  margin-right: 2cm;
+  font-size: 11pt;
+  font-family: Arial;
+  text-align: left;
+}
+
+.titulor {
+  text-indent: 3cm;
+  font-size: 14pt;
+  font-family: Arial;
+  margin-top: 3cm;
+  text-align: center;
+}
+
+@media(max-width: 1286px) {
+  .showcase {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+  }
+  
+
+}
+
+
+
+@media(max-width: 896px) {
+  .bodytext {
+    grid-template-areas:
+      'showcase showcase'
+      'topbox-a topbox-b'
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+
+  .text {
+    font-size: 3rem;
+    grid-column: 2 / 7;
+    text-indent: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: -0.8rem;
+  }
+
+  :root {
+    zoom: 35%;
+
+
+  }
+
+.congo {
+  font-size: 1.8rem;
+}
+
+.titulo {
+  font-size: 2rem;
+}
+
+.imageTitle {
+  font-size: 1.2rem;
+}
+
+.imagemSubtitulo {
+  font-size: 1.2rem;
+}
+
+.titulor {
+  font-size: 2rem;
+}
+
+.referencia {
+  font-size: 1.4rem
+}
+
+.subtitulo {
+  font-size: 2.2rem;
+}
+ 
+}
