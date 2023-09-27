@@ -176,6 +176,7 @@ footer>p {
   margin-left: 3cm;
   margin-right: 2cm;
   font-family: Arial;
+  font-size: 1rem;
 }
 
 .image {
@@ -294,6 +295,10 @@ footer>p {
   }
 
 .congo {
+  font-size: 1.8rem;
+}
+
+.lista {
   font-size: 1.8rem;
 }
 
