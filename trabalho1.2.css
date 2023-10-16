@@ -225,6 +225,7 @@ footer>p {
 .imagemSubtitulo {
   font-family: Arial;
   font-size: 10pt;
+  /*text-align: center;*/
 }
 
 .itemImg {
@@ -236,6 +237,11 @@ footer>p {
   text-align: left;
   display: inline-block;
 
+}
+figure, figcaption{
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .referencia {
