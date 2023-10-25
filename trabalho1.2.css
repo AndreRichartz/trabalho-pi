@@ -283,7 +283,9 @@ figure, figcaption{
   .main-nav ul {
     grid-template-columns: 1fr;
   }
-
+  .main-nav li a {
+    font-size: 30px;
+  }
   .showcase {
     margin-left: 0.5vw;
     margin-right: 0.5vw;
