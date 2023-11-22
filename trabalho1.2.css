@@ -4,7 +4,9 @@
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   font-family: 'Roboto Slab', serif;
 }
-
+/*=======================================
+    FORMATAÇÃO  GERAIS
+======================================= */
 html {
   box-sizing: border-box;
 
@@ -32,6 +34,14 @@ body {
   display: grid;
   gap: 20px;
 }
+
+
+
+
+/* ====================================
+  FORMATAÇÃO PRINCIPAL
+===================================== */
+
 
 .main-nav ul {
   display: grid;
@@ -261,6 +271,9 @@ figure, figcaption{
   text-align: center;
 }
 
+/* ====================================
+  RESPANSIVIDADE
+===================================== */
 @media(max-width: 1286px) {
   .bodytext {
     margin-left: 10vw;
@@ -282,9 +295,13 @@ figure, figcaption{
 
   .main-nav ul {
     grid-template-columns: 1fr;
+     text-align: center
   }
   .main-nav li a {
-    font-size: 30px;
+    display: inline-block;
+    font-size: 50px;
+    margin-bottom: 10px;
+  
   }
   .showcase {
     margin-left: 0.5vw;
@@ -306,36 +323,31 @@ figure, figcaption{
 
   }
 
-.congo {
-  font-size: 1.8rem;
-}
-
-.lista {
-  font-size: 1.8rem;
+.congo, .lista, .referencia {
+  font-size: 2.2rem;
+  line-height: 2.9rem;
 }
 
 .titulo {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .imageTitle {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .imagemSubtitulo {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .titulor {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
-.referencia {
-  font-size: 1.4rem
-}
+
 
 .subtitulo {
-  font-size: 2.2rem;
+  font-size: 2.9rem;
 }
  
 }
